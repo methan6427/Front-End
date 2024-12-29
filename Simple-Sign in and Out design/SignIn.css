@@ -1,0 +1,162 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Container */
+#container-sign-in {
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    background: #fff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Form Container */
+.form-container {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+span {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Buttons */
+button {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    margin-top: 86px;
+    margin-bottom: 150px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hidden:hover {
+    background: white;
+    color: #3498db;
+}
+
+/* Toggle Container */
+.toggle-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    flex-direction: column;
+    border-radius: 0 10px 10px 0;
+}
+
+.toggle-container h1 {
+    font-size: 35pt;
+    margin-top: 150px;
+    line-height: 1.3;
+    color: white;
+}
+
+.toggle-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    margin: 30px 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    #container-sign-in {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .form-container, .toggle-container {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .toggle-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px;
+    }
+}
